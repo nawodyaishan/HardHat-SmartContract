@@ -7,7 +7,6 @@ contract Token {
     address public owner;
     mapping(address => uint) balances;
 
-
     constructor (){
         balances[msg.sender] = totalSupply;
         owner = msg.sender;
@@ -20,6 +19,6 @@ contract Token {
     }
 
     function balanceOf(address account) external view returns (uint){
-        return balances[accounts];
+        return balances[account];
     }
 }
