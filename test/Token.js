@@ -55,7 +55,6 @@ describe(`Token Contract Testing`, () => {
 
             expect(addr1Balance).to.eq(100);
             expect(addr2Balance).to.eq(50);
-
         });
     })
 })
